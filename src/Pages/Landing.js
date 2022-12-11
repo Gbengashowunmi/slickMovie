@@ -55,16 +55,16 @@ function Landing() {
       <section>
       <div className="category">
                 <p className="category_title">Category</p>
-        { movie &&
+        {/* {
           movie.map((mov) => {
-            return (
+            return ( */}
                 <div className="movie">
                   <img src='/images/photo-1517604931442-7e0c8ed2963c.jpg' alt="movie" />
-                  <p className="title">{mov.Title}</p>
+                  <p className="title">movie title</p>
                 </div>
-            )
+            {/* )
           })
-        }
+        } */}
         </div>
       </section>
     </div>
