@@ -11,7 +11,7 @@ function Landing() {
   // Fetch movies function
   const fetchMovie = async () => {
     const result = await fetch(
-      "http://www.omdbapi.com/?i=tt3896198&apikey=6ed00ae2"
+      "https://www.omdbapi.com/?i=tt3896198&apikey=6ed00ae2"
     );
     const data = await result.json();
     setMovie([data]);
