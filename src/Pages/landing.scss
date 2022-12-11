@@ -63,18 +63,39 @@
 @media (max-width: 834px) {
   .landing {
     .header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+      height: 67px;
+  
       button {
-      font-size: 32px;
-      border: 2px solid green;
-
+      font-size: 18.43px;
+      height: 33.58px;
+      width: 108px;
+      border: 2px solid magenta;
       }
     }
     article {
+      display: flex;
+      .hero_image {
+        width: 100%;
+        height: 257px;
+      }
       h1 {
-        // font-family: "DM Sans";
+        font-size: 28px;
+        width: 273px;
         text-align: center;
-        margin: 109px 172px 159px 172px;
+        margin: 98px 0 87px 23px;
+      }
+    }
+    form {
+      margin: 56px 0 0 28px;
+      text-align: left;
+      input {
+        width: 265px;
+        height: 34px;
       }
     }
     section {
