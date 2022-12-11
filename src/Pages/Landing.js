@@ -53,19 +53,20 @@ function Landing() {
         <button onClick={handleSubmit}>search</button>
       </form>
       <section>
+      <div className="category">
+                <p className="category_title">Category</p>
         {
           movie.map((mov) => {
             return (
-              <div className="category">
-                <p className="category_title">musc</p>
+              
                 <div className="movie">
                   <img src={mov.Poster} alt="movie" />
                   <p className="title">{mov.Title}</p>
                 </div>
-              </div>
             )
           })
-          }
+        }
+        </div>
       </section>
     </div>
   );
