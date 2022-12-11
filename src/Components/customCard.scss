@@ -1,6 +1,8 @@
 .category {
   padding-right: 10px;
   height: 100%;
+  border: 2px solid red;
+
   .category_title {
     text-align: left;
     color: black;
@@ -13,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  // border: 2px solid red;
 
     img {
       width: 100%;

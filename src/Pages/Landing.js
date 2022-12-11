@@ -55,7 +55,7 @@ function Landing() {
       <section>
       <div className="category">
                 <p className="category_title">Category</p>
-        {
+        { movie &&
           movie.map((mov) => {
             return (
                 <div className="movie">
