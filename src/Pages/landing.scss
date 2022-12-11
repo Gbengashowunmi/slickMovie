@@ -1,23 +1,28 @@
 .landing {
-  height: fit-content;
+  height: 140px;
   .header {
     text-align: left;
-    padding: 20px 0 20px 30px;
-    background-color: rgb(61, 60, 60);
+    padding: 40px 0 40px 77px;
+    background-color: #292929;
+
     button {
       border: 1px solid white;
       background-color: transparent;
       color: white;
-      padding: 0.5rem 1rem;
+    font-family: "DM Sans";
+    font-size: 32px;
+    height: 60px;
+    width: 193px;
+
     }
   }
   article {
     display: flex;
-    align-items: center;
-    justify-content: left;
+    // align-items: center;
+    // justify-content: left;
     .hero_image {
       width: 100%;
-      height: 40vw;
+      height: 550px;
       img {
         width: 100%;
         height: 100%;
@@ -27,27 +32,27 @@
     h1 {
       position: absolute;
       color: white;
-      font-size: 3.5rem;
-      width: 30%;
+      // font-family: "DM Sans";
+      font-size: 72px;
+      width: 490px;
+        font-style: normal;
+        font-weight: 700;
       text-align: left;
-      padding-left: 4rem;
+      margin: 109px 0 159px 77px;
+      padding: 0;
     }
   }
   form {
-    padding: 10px 30px;
+    margin: 63px 57px 0 77px;
     text-align: left;
-    // border: 2px solid yellow;
     input {
       width: 100%;
-      height: 30px;
+      height: 54px;
       border: 1px solid black;
     }
   }
   section {
-    margin: 10px 30px;
-    // display: flex;
     overflow-x: scroll;
-    height: fit-content;
   }
 }
 // ::-webkit-scrollbar {
@@ -55,30 +60,66 @@
 //   background: transparent; /* optional: just make scrollbar invisible */
 //   }
 
-
-@media (max-width:600px) {
+@media (max-width: 834px) {
   .landing {
     .header {
       text-align: center;
+      button {
+      font-size: 32px;
+      }
     }
     article {
-        justify-content: center;
-      .hero_image {
-        height: 60vw;
-      }
       h1 {
-        position: absolute;
-        color: white;
-        font-size: 7vw;
-        width: 40%;
-        padding-left: 0;
+        // font-family: "DM Sans";
+        text-align: center;
+        margin: 109px 172px 159px 172px;
       }
     }
     section {
-      margin: 10px 30px;
-      display: flex;
       overflow-x: scroll;
-      height: fit-content;
+    }
+  }
+
+}
+@media (max-width: 320px) {
+  .landing {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      width: 320px;
+      height: 67px;
+  
+      button {
+      font-size: 18.43px;
+      height: 33.58px;
+      width: 108px;
+      }
+    }
+    article {
+      display: flex;
+      .hero_image {
+        width: 100%;
+        height: 257px;
+      }
+      h1 {
+        font-size: 28px;
+        width: 273px;
+        text-align: center;
+        margin: 98px 0 87px 23px;
+      }
+    }
+    form {
+      margin: 56px 0 0 28px;
+      text-align: left;
+      input {
+        width: 265px;
+        height: 34px;
+      }
+    }
+    section {
+      overflow-x: scroll;
     }
   }
 }

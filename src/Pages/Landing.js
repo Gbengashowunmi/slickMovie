@@ -22,17 +22,16 @@ function Landing() {
 
   // handleInput function
   const handleInput = (e) => {
-    return setSearchInput(e.target.value)
-  }
+    return setSearchInput(e.target.value);
+  };
 
   // handleSubmit function
   const handleSubmit = (e) => {
     e.preventDefault();
-    const searchResult = movie.filter(
-      (searched) => searched.Title.toLowerCase().includes(searchInput.toLowerCase())
+    const searchResult = movie.filter((searched) =>
+      searched.Title.toLowerCase().includes(searchInput.toLowerCase())
     );
-    setMovie(searchResult)
-    
+    setMovie(searchResult);
   };
 
   return (
@@ -47,24 +46,35 @@ function Landing() {
         <h1>Watch something incredible.</h1>
       </article>
 
-      <form type="submit">
+      <form type="submit" onSubmit={handleSubmit}>
         <label>Search</label>
         <input onChange={handleInput} />
-        <button onClick={handleSubmit}>search</button>
+        {/* <button onClick={handleSubmit}>search</button> */}
       </form>
       <section>
-      <div className="category">
-                <p className="category_title">Category</p>
-        {
-          movie.map((mov) => {
+        <div className="category">
+          <p className="category_title">movie Category Name</p>
+          {movie.map((mov) => {
             return (
-                <div className="movie" key={mov.Title}>
-                  <img src={mov.Poster} alt="movie" />
-                  <p className="title">{mov.Title}</p>
-                </div>
-            )
-          })
-        }
+              <div className="movie" key={mov.Title}>
+                <img src={mov.Poster} alt="movie" />
+                <p className="title">{mov.Title}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section>
+        <div className="category">
+          <p className="category_title">movie Category Name</p>
+          {movie.map((mov) => {
+            return (
+              <div className="movie" key={mov.Title}>
+                <img src={mov.Poster} alt="movie" />
+                <p className="title">{mov.Title}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
     </div>
