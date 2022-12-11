@@ -1,0 +1,26 @@
+$primaryColor: rgb(197, 7, 7);
+$secondaryColor: rgb(15, 14, 14);
+$textColor: rgb(240, 240, 240);
+
+
+.primary_color {
+    color: $primaryColor;
+  }
+button {
+    margin: 0 1rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  background: linear-gradient($secondaryColor, $secondaryColor) no-repeat, $primaryColor;
+  background-size: 0% 100%; /* Or 100% 0% */
+  background-position: center;
+  transition: 1s;
+  color: $textColor;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-size: 100% 100%;
+}
