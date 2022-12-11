@@ -58,9 +58,8 @@ function Landing() {
         {
           movie.map((mov) => {
             return (
-              
                 <div className="movie">
-                  <img src={mov.Poster} alt="movie" />
+                  <img src='/images/photo-1517604931442-7e0c8ed2963c.jpg' alt="movie" />
                   <p className="title">{mov.Title}</p>
                 </div>
             )

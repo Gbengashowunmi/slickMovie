@@ -45,15 +45,15 @@
   }
   section {
     margin: 10px 30px;
-    display: flex;
+    // display: flex;
     overflow-x: scroll;
-    height: 500px;
+    height: fit-content;
   }
 }
-::-webkit-scrollbar {
-  width: 0px; /* remove scrollbar space */
-  background: transparent; /* optional: just make scrollbar invisible */
-  }
+// ::-webkit-scrollbar {
+//   width: 0px; /* remove scrollbar space */
+//   background: transparent; /* optional: just make scrollbar invisible */
+//   }
 
 
 @media (max-width:600px) {
