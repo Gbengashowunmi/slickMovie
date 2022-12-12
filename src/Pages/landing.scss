@@ -1,5 +1,5 @@
 .landing {
-  height: 140px;
+  // height: 140px;
   .header {
     text-align: left;
     padding: 40px 0 40px 77px;
@@ -62,14 +62,14 @@
 
 @media (max-width: 834px) {
   .landing {
+    width: 100%;
     .header {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0;
-      width: 100vw;
+      width: 100%;
       height: 140px;
-  
       button {
       font-size: 32.94px;
       height: 60px;
@@ -78,15 +78,24 @@
     }
     article {
       display: flex;
+      justify-content: center;
+      align-items: center;
       .hero_image {
-        width: 100%;
+        width:100%;
         height: 550px;
+        // margin: auto;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
       h1 {
         font-size: 72px;
-        width: 490px;
+        width: 58.28%;
         text-align: center;
-        margin: 109px 172px 159px 172px;
+        margin: auto;
+        // margin: 109px 172px 159px 172px;
       }
     }
     form {
@@ -94,7 +103,7 @@
       text-align: left;
       font-size: 24px;
       input {
-        width: 680px;
+        width: 100%;
         height: 54px;
       }
     }
@@ -111,14 +120,13 @@
       align-items: center;
       justify-content: center;
       padding: 0;
-      width: 320px;
+      width: 100%;
       height: 67px;
   
       button {
       font-size: 18.43px;
       height: 33.58px;
       width: 108px;
-      border: 2px solid red;
       }
     }
     article {
@@ -135,10 +143,12 @@
       }
     }
     form {
-      margin: 56px 0 0 28px;
+      margin: 56px 28px 0 28px;
       text-align: left;
+      // width: 100%;
+
       input {
-        width: 265px;
+        width: 100%;
         height: 34px;
       }
     }
